@@ -7,13 +7,13 @@
 */
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; /*que a borda faça parte da conta de width*/
 }
 
-body , html {
+body, html {
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -27,10 +27,10 @@ main {
 }
 
 section#login {
-    position: absolute;
+    position: absolute; /*para atender as propriedades de posição. Lembrando que a referência de posição é o canto superior esquerdo*/
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /*propriedades tradicionais para centralizar um box*/
     overflow: hidden;
 
     background-color: white;
@@ -41,12 +41,19 @@ section#login {
 }
 
 div#imagem {
-    background: #5f2c82 url(../imagens/metal.jpg) left bottom / cover no-repeat;
+    display: block;
+    background: #5f2c82 url(../imagens/metal.jpg) left bottom / cover no-repeat; /*background = shorthand para: 
+    background-color: #5f2c82;
+    background-image: url(../imagens/metal.jpg);
+    background-position: left bottom;
+    background-size: cover;
+    background-repeat: no-repeat; */
     width: 250px;
     height: 200px;
 }
 
 div#formulario {
+    display: block;
     padding: 15px;
 }
 
