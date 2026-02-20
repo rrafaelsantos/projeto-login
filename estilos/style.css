@@ -65,3 +65,7 @@ div#formulario > p {
     padding: 10px 0px;
     font-size: 0.8em;
 }
+
+.button {
+    padding: 1px;
+}
