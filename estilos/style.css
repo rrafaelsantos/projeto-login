@@ -14,10 +14,10 @@
 }
 
 body, html {
+    background-color: #5f2c82;
     height: 100vh;
     width: 100vw;
     margin: 0;
-    background-color: #5f2c82;
 }
 
 main {
@@ -40,15 +40,14 @@ section#login {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
 }
 
-div#imagem {
+section#login > div#imagem {
     display: block;
-    background: #5f2c82 url(../imagens/metal.jpg) left bottom / cover no-repeat; /*background = shorthand para: 
     background-color: #5f2c82;
     background-image: url(../imagens/metal.jpg);
     background-position: left bottom;
     background-size: cover;
-    background-repeat: no-repeat; */
-    width: 250px;
+    background-repeat: no-repeat;
+    width: 500px;
     height: 200px;
 }
 
