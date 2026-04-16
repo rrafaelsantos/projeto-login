@@ -55,7 +55,6 @@ section#login > div#imagem {
 }
 
 div#formulario {
-    display: block;
     padding: 5px 10px;
 }
 
@@ -67,24 +66,42 @@ div#formulario > h1 {
 div#formulario > p {
     font-size: 0.8em;
     padding: 1px;
+    text-align: center;
 }
 
 form > div.campo {
     background-color: #5f2c82;
-    height: 40px;
-    border-radius: 5px;
+    height: 41px;
+    border: 2px solid #5f2c82;
+    border-radius: 8px;
     margin: 5px auto;
     max-width: 400px;
 }
 
 .lacuna {
-    border: 2px solid black;
-    padding: 1px;
-    border-radius: 3px;
+    background-color: #7ededa;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 10px;
+    transform: translateY(-11px);
+}
+
+.lacuna:focus-within {
+    background-color: white;
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
 }
 
 .botao {
@@ -127,5 +144,7 @@ a#botao-esqueci-senha:hover {
 }
 
 form > a#botao-esqueci-senha > span {
-    font-size: 1em;
+    font-size: 1.1em;
+    padding-top: 5px;
+    transform: translateY(3px)
 }
