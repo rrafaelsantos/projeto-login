@@ -33,7 +33,11 @@ Grandes telas: acima de 1200px
 
     div#formulario > h1 {
     text-align: justify;
-}
+    }
+
+    .botao {
+        margin: 7px auto;
+    }
 }
 
 /*Desktop: 992px até 1200px*/
@@ -86,5 +90,21 @@ Grandes telas: acima de 1200px
         float: right;
         width: 50%;
         height: 100%;
+    }
+
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+
+    div#formulario > p {
+        font-size: 1.2em;
+    }
+
+    form > div.campo {
+        max-width: 500px;
+    }
+
+    .botao {
+        max-width: 500px;
     }
 }
