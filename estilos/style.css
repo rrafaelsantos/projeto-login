@@ -21,17 +21,16 @@ body, html {
 }
 
 main {
-    position: relative;
+    display: flex;
     height: 100vh;
     width: 100vw;
+    justify-content: center;
+    align-items: center;
 }
 
 section#login {
-    position: absolute; /*para atender as propriedades de posição. Lembrando que a referência de posição é o canto superior esquerdo*/
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /*propriedades tradicionais para centralizar um box*/
-    overflow: hidden;
+    
+    overflow: hidden; /*esconda tudo o que ultrapassar os limites do elemento*/
 
     background-color: white;
     width: 270px;
@@ -81,11 +80,11 @@ form > div.campo {
 .lacuna {
     background-color: #7ededa;
     font-size: 1em;
+    padding: 10px;
     width: calc(100% - 45px);
     height: 100%;
     border: 0px;
     border-radius: 8px;
-    padding: 10px;
     transform: translateY(-11px);
 }
 
